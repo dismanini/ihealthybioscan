@@ -44,19 +44,25 @@ function App() {
     );
   }
 
-  if (scanner === "animal") {
+   if (scanner === "animal") {
     return (
       <div className="app-shell">
+
         <header className="top-header">
+
           <div className="brand">
+
             <div className="brand-logo animal-logo">
               <PawPrint size={28} />
             </div>
 
             <div>
               <h1>iHealthyBio</h1>
-              <span>AI Pet & Animal Analysis</span>
+              <span>
+                AI Pet & Animal Analysis
+              </span>
             </div>
+
           </div>
 
           <button
@@ -66,11 +72,15 @@ function App() {
             <ArrowLeft size={18} />
             Back
           </button>
+
         </header>
 
         <main>
-          <AnimalScanner onBack={() => setScanner(null)} />
+          <AnimalScanner
+            onBack={() => setScanner(null)}
+          />
         </main>
+
       </div>
     );
   }
@@ -133,7 +143,7 @@ function App() {
           <div className="scanner-grid">
             <button
               className="scanner-card human-card"
-              onClick={() => setScanner("human")}
+              
             >
               <div className="scanner-icon">
                 <UserRound size={42} />
@@ -156,14 +166,16 @@ function App() {
                 </div>
               </div>
 
-              <div className="launch-button">
+              <div   className="launch-button"  onClick={() => {
+    window.location.href = "https://ihealthy-bio.netlify.app/";
+  }}>
                 Start Human Scan →
               </div>
             </button>
 
             <button
               className="scanner-card animal-card"
-              onClick={() => setScanner("animal")}
+              
             >
               <div className="scanner-icon animal">
                 <PawPrint size={42} />
@@ -186,7 +198,9 @@ function App() {
                 </div>
               </div>
 
-              <div className="launch-button">
+              <div className="launch-button"  onClick={() => {
+    window.location.href = "https://ihealthybio-animal.netlify.app/";
+  }}>
                 Start Animal Scan →
               </div>
             </button>
