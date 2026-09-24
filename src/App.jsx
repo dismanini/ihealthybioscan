@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import {
-  HeartPulse,
+  // HeartPulse,
   PawPrint,
   UserRound,
   ShieldCheck,
   ArrowLeft,
 } from "lucide-react";
-
+import logo from "./assets/iHealthy-logo.png";
 import HumanScanner from "./components/HumanScanner";
 import AnimalScanner from "./components/AnimalScanner";
 
@@ -18,14 +18,25 @@ function App() {
       <div className="app-shell">
         <header className="top-header">
           <div className="brand">
-            <div className="brand-logo">
+             <img
+    src={logo}
+    alt="iHealthyBio Logo"
+    style={{
+      width: "165px",
+      height: "165px",
+      objectFit: "contain",
+      display: "block"
+    }}
+  />
+            {/* <div className="brand-logo">
+              
               <HeartPulse size={28} />
             </div>
 
             <div>
               <h1>iHealthyBio</h1>
               <span>AI Face & Health Analysis</span>
-            </div>
+            </div> */}
           </div>
 
           <button
@@ -51,8 +62,17 @@ function App() {
         <header className="top-header">
 
           <div className="brand">
-
-            <div className="brand-logo animal-logo">
+ <img
+    src={logo}
+    alt="iHealthyBio Logo"
+    style={{
+      width: "165px",
+      height: "165px",
+      objectFit: "contain",
+      display: "block"
+    }}
+  />
+            {/* <div className="brand-logo animal-logo">
               <PawPrint size={28} />
             </div>
 
@@ -61,7 +81,7 @@ function App() {
               <span>
                 AI Pet & Animal Analysis
               </span>
-            </div>
+            </div> */}
 
           </div>
 
@@ -89,14 +109,25 @@ function App() {
     <div className="app-shell">
       <header className="top-header landing-header">
         <div className="brand">
-          <div className="brand-logo">
+           <img
+    src={logo}
+    alt="iHealthyBio Logo"
+    style={{
+      width: "165px",
+      height: "165px",
+      objectFit: "contain",
+      display: "block"
+    }}
+  />
+          {/* <div className="brand-logo">
+             
             <HeartPulse size={30} />
           </div>
 
           <div>
             <h1>iHealthyBio</h1>
             <span>AI Face & Health Analysis</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="secure-badge">
